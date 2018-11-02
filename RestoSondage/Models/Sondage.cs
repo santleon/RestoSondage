@@ -12,12 +12,14 @@ namespace RestoSondage.Models
         [DataMember(Name = "id")]
         public int Id { get; set; }
         [DataMember(Name = "name")]
-        public string éname { get; set; }
+        public string Name { get; set; }
         [DataMember(Name = "endDate")]
         public DateTime EndDate { get; set; }
         [DataMember(Name = "userIds")]
-        public User Utilisateur { get; set; }
+        public List<User> Utilisateur { get; set; }
         [DataMember(Name = "restoIds")]
-        public Restaurant Restaurant { get; set; }
+        public List<Restaurant­­> Restaurant { get; set; }
+        [DataMember(Name = "votes")]
+        public List<Vote> Votes { get; set; }
     }
 }

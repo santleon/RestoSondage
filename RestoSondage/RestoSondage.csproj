@@ -195,10 +195,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PollController.cs" />
+    <Compile Include="Controllers\PollVoteController.cs" />
     <Compile Include="Controllers\RestoController.cs" />
     <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,11 +210,24 @@
     <Compile Include="Migrations\201810282156365_CreationSondage.Designer.cs">
       <DependentUpon>201810282156365_CreationSondage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810310118397_CreationSondage1.cs" />
+    <Compile Include="Migrations\201810310118397_CreationSondage1.Designer.cs">
+      <DependentUpon>201810310118397_CreationSondage1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810310121339_CreationSondage2.cs" />
+    <Compile Include="Migrations\201810310121339_CreationSondage2.Designer.cs">
+      <DependentUpon>201810310121339_CreationSondage2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810310125459_CreationSondage3.cs" />
+    <Compile Include="Migrations\201810310125459_CreationSondage3.Designer.cs">
+      <DependentUpon>201810310125459_CreationSondage3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="Models\RestoSondageContext.cs" />
     <Compile Include="Models\Sondage.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Vote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -309,6 +322,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810282156365_CreationSondage.resx">
       <DependentUpon>201810282156365_CreationSondage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810310118397_CreationSondage1.resx">
+      <DependentUpon>201810310118397_CreationSondage1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810310121339_CreationSondage2.resx">
+      <DependentUpon>201810310121339_CreationSondage2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810310125459_CreationSondage3.resx">
+      <DependentUpon>201810310125459_CreationSondage3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

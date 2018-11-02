@@ -6,14 +6,13 @@ using System.Web;
 
 namespace RestoSondage.Models
 {
-    [DataContract]
-    public class Restaurant
+    public class Vote
     {
         [DataMember(Name = "id")]
         public int Id { get; set; }
-        [DataMember(Name = "name")]
-        public string Name { get; set; }
-        [DataMember(Name = "address")]
-        public string Address { get; set; }
+        [DataMember(Name = "userId")]
+        public User Utilisateur { get; set; }
+        [DataMember(Name = "restoId")]
+        public Restaurant­­ Restaurant { get; set; }
     }
 }

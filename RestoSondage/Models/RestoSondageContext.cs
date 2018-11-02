@@ -22,5 +22,9 @@ namespace RestoSondage.Models
         public System.Data.Entity.DbSet<RestoSondage.Models.User> Users { get; set; }
 
         public System.Data.Entity.DbSet<RestoSondage.Models.Restaurant> Restaurants { get; set; }
+
+        public System.Data.Entity.DbSet<RestoSondage.Models.Sondage> Sondages { get; set; }
+
+        public System.Data.Entity.DbSet<RestoSondage.Models.Vote> Votes { get; set; }
     }
 }
